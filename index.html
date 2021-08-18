@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einkommensteuer-Berechnung</title>
+    <script src="https://kit.fontawesome.com/14883d2ece.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+     <!--firstPage  -->
+     <section class="firstP">
+        <div class="bg"></div>
+        <div class="people"></div>
+     <!-- logo-->
+        <header>
+            <i class="fas fa-coins fa-lg "></i>
+            <h4>Einkommensteuerrechner</h4>  
+        </header> 
+        <article>
+            <h1>Willkommen</h1>
+            <p>Hole dir jetzt dein Geld vom Finanzamt zurück!</p> 
+        </article>   
+    </section>
+    <!-- main page -->
+    <main>
+        <article>
+            <div>
+                <img src="assets/img/Frau.jpeg" alt="#">
+            </div>
+            
+            <div>
+                <h3><span>Einkommensteuerrechner</span>-App für Arbeitnehmer, Auszubildende, Studenten .... </h3>
+                <h6>&#10003;Ohne Steuerformulare </h6>
+                <h6>&#10003;Schritt für Schritt </h6>
+                <h6>&#10003;Kein Steuerwissen notwendig </h6>
+                <h6>&#10003;Sofortige Berechnung </h6>
+            </div>
+           
+        </article>
+        <!-- <div id="stepRange">
+            <label for="step"> step1~ step4</label>
+            <input type="range" name="step" id="step" min="0" max=""100" step="4" onchange="changeStatus()">
+        </div> -->
+        <h5>Step1</h5>
+        <section class="step1">
+            <div>
+                <h3>Wähle ein Jahr aus.</h3>
+                <h6>Für Welches Jahr willst du die Steuererklärung machen?</h6>
+            </div>
+            <form action="">
+                    <select name="Jahr" id="jahr">
+                        <option value="#">2021</option>
+                        <option value="#">2020</option>
+                        <option value="#">2019</option>
+                    </select>
+            </form>
+        </section>
+        <h5>Step2</h5>
+        <section class="step2">
+            <div>
+                <h3>Wie ist dein Familienstand?</h3>
+                
+            </div>
+            <form action="">
+                <div>
+                    <input name="#" type="radio" id="ledig" checked="checked" >
+                    <label for="radio">Ledig</label>
+                </div>
+                <div>
+                    <input name="#" type="radio" id="verheiratet">
+                    <label for="radio">Verheiratet</label>
+                </div>
+                
+            </form>
+        </section>
+        <h5>Step3</h5>
+        <section class="step3">
+            <div>
+                <h3>zu versteuerndes Einkommen:</h3>   
+            </div>
+            <form action="">
+                <div>
+                    <input type="number" name="b_gehalt" id="b_Gehalt" placeholder="0,00">
+                </div>
+            </form>
+        </section>
+        <section class="berechnung">
+           <input type="button" value="Berechnen" onclick="showMe()">  
+        </section>
+        <div class="rückzahlung">
+            <h6>Einkommensteuer: &#128; <span id="Est"></span></h6>
+            
+        </div>
+       
+       
+   </main>
+   <footer>
+       <h5>Bitte bewerten diese Seite! </h5>
+       <i class="fas fa-star fa-lg" id="star1" onclick="changeColor1()"></i>
+       <i class="fas fa-star fa-lg" id="star2" onclick="changeColor2()"></i>
+       <i class="fas fa-star fa-lg" id="star3" onclick="changeColor3()"></i>
+       <i class="fas fa-star fa-lg" id="star4" onclick="changeColor4()"></i>
+       <i class="fas fa-star fa-lg" id="star5" onclick="changeColor5()"></i>
+       <p>Aktuelle Bewertung: 4,5 (172 Abstimmungsergebnisse)</p>
+       <p>&#169;COPYRIGHT 2012-2021
+       <br>Kontakt | Impressum | Datenschutz | Bildnachweise</p>
+   </footer>
+   <script src="assets/js/main.js"></script> 
+</body>
+</html>
